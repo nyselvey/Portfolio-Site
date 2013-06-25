@@ -1,0 +1,254 @@
+/********** Web Fonts **********/
+@import url(http://fonts.googleapis.com/css?family=Lato:300); 
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+
+/********** Fixes **********/
+
+* {
+	margin: 0;
+	padding:0;
+	border:0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+/* prevent the verify image on contact page from stretching */
+
+img.verif_img {
+	width: 50px;
+	height:30px;
+	vertical-align: bottom;
+}
+
+/********** Global **********/
+
+
+h4 {
+	color:#20A4AB;
+	margin-bottom: 5px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bolder;
+}
+
+h5 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1em;
+}
+
+li {
+	margin-bottom: 5px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+ul {
+	margin-bottom: 10px;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	margin-top: 5px;
+	width: 100px;
+	background: black;
+	color: white;
+	border-radius: 25px;
+	border: 0;
+}
+
+input[type="submit"]:hover {
+	background: #555;
+}
+
+input.verif_box {
+	display: inline-block;
+	width: 80%;
+	margin-right: 5px;
+}
+
+a:link, a:visited {
+	color:black;
+	text-decoration:none;
+}
+
+.shadow {
+	box-shadow: 0 1px 5px #333;
+}
+
+.wrapper {
+	width: 65%;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+#container {
+	background-image: url(../images/cream_pixels.png);
+	background-repeat: repeat;	
+	padding: 10px;
+}
+
+#containerborder {
+	background-image: url(../images/cream_pixels.png);
+	background-repeat: repeat;	
+	padding: 10px;
+	border-top: 1px ridge #000;
+}
+
+#social {
+	position: relative;
+}
+	a.lin, a.pin, a.email, a.gplus {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		text-indent: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 0 0 0 8%;
+	}
+
+	a.lin {
+		background: url(../images/linkedin.png) no-repeat;
+	}
+
+	a.pin {
+		background: url(../images/pinterest.png) no-repeat;
+	}
+
+	a.email {
+		background: url(../images/email.png) no-repeat;
+	}
+
+	a.gplus {
+		background: url(../images/googleplus.png) no-repeat;
+	}
+
+
+/********** Sections **********/
+
+section {
+		padding: 20px;
+		background-image: url(../images/cream_pixels.png);
+	}
+
+	#work {
+		background-image: url(../images/cream_pixels.png);
+		background-repeat: repeat;	
+		padding: 10px;
+	}
+
+#special {
+	padding: 10px;
+	background-image: url(../images/cream_pixels.png);
+	margin-bottom: 10px;
+}
+
+/********** Name **********/
+
+#name {
+	font-family: 'Dancing Script', cursive;
+	font-size:28px;
+	color:#20A4AB;
+	margin-left: 23%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+/********** Navigation Bar **********/
+
+#nav a {
+	color:black;
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+	font-size:18px;
+	font-weight:normal;
+	background-image: url(../images/ticks.jpg);
+	background-repeat: repeat;
+	border: 1px solid gray;
+}
+
+#nav nav a {
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+}
+
+#nav a:hover {
+	color:#20A4AB;
+}
+
+/********** Positioning Classes **********/
+
+.col1_left {
+	float: left;
+	width: 32.6%;
+	margin: 0 0 10px;
+	clear:both;
+}
+
+.col1_mid {
+	float: left;
+	width: 32.6%;
+	margin: 0 1% 10px 1%;
+}
+
+.col1_right {
+	float: right;
+	width: 32.6%;
+	margin: 0 0 10px 0;
+}
+
+.col2_left {
+	float:left;
+	width: 66.4%;
+	margin: 0 1% 10px 0;
+}
+
+.col2_right {
+	float: right;
+	width: 66.4%;
+	margin: 0 0 10px 1%;
+}
+
+.col3 {
+	width:80%;
+	margin: 0 50px;
+	clear: both;
+}
+
+
+/********** Footer **********/
+
+footer {
+	font-size: 12px;
+	font-family: Arial;
+	text-align: center;
+	clear:both;
+	background-image: url(../images/cream_pixels.png);
+	background-repeat: repeat;
+}

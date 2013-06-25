@@ -1,0 +1,166 @@
+/******************** Device Styles *********************/
+
+/** Computer: 1280 **/
+
+@media only screen and (max-width:1280px) {
+	a.lin, a.pin, a.email, a.rss {
+		margin: 0 0 0 10%;
+	}
+}
+
+/** Computer: 1024px **/
+
+@media only screen and (max-width: 1024px) {
+	
+	.wrapper {
+		width:80%;
+	}
+
+	section {
+		padding: 10px;
+	}
+
+	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right {
+		margin-bottom: 5px;
+	}
+
+	#name {
+		margin-left: 30%;
+	}
+
+}
+
+/** Tablet-Portrait: 966px **/
+
+@media only screen and (max-width: 966px) {
+	.wrapper {
+		width:85%;
+	}
+}
+
+/** Tablet-Portrait: 800px **/
+
+@media only screen and (max-width: 800px) {
+	
+	.wrapper {
+		width:90%;
+	}
+
+	#name {
+		margin-left: 25%;
+	}
+
+	#social {
+		display:block;
+
+	}
+}
+
+/** Tablet-Portrait: 603px **/
+
+@media only screen and (max-width: 603px) {
+	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right {
+		float: none;
+		width: 100%;
+		margin: 0 0 20px;
+	}
+
+	#name{
+		margin-left: 18%;
+	}
+}
+
+/** Tablet-Portrait: 533px **/
+
+@media only screen and (max-width: 533px) {
+	.wrapper {
+		width:100%;
+	}
+}
+
+/** Mobile: 480px **/
+
+@media only screen and (max-width: 480px) {
+	
+	img {
+		width:275px;
+		height:200px;
+		margin-left:18%;
+		margin-right:5%;
+	}
+
+	#name {
+		font-size:1.2em;
+		margin-left: 28%;
+		margin-top:1%;
+		margin-bottom:1%;
+	}
+
+	#nav a {
+		font-size:0.9em;
+	}
+
+	p {
+		font-size:0.8em;
+	}
+
+	li {
+		font-size:0.8em;
+	}
+
+	.col3 {
+		width:100%;
+		margin:1%;
+	}
+}
+
+/** Mobile: 320px **/
+
+@media only screen and (max-width: 320px) {
+	.wrapper {
+		width:100%;
+	}
+
+	#nav nav a {
+		display: block;
+		width: 100%;
+		font-size: 0.8em;
+		border-right: 0;
+		border: 1px solid #ccc;
+	}
+
+	img {
+		margin:1%;
+	}
+
+	#name {
+		margin-left:18%;
+	}
+}
+
+/** Mobile: 240px **/
+
+@media only screen and (max-width: 240px) {
+	img {
+		width:175px;
+		height:120px;
+		margin:5%;
+	}
+
+	#name {
+		margin-left:18%;
+		font-size:0.8em;
+	}
+
+	p {
+		font-size:0.8em;
+	}
+
+	h4, h5 {
+		font-size:0.8em;
+	}
+
+	li {
+		font-size:0.8em;
+	}
+}
