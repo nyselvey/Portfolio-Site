@@ -1,17 +1,42 @@
 /******************** Device Styles *********************/
 
-/** Computer: 1280 **/
-
-@media only screen and (max-width:1280px) {
-	a.lin, a.pin, a.email, a.rss {
-		margin: 0 0 0 10%;
+/** Computer: 20" Desktop **/
+@media only screen and (max-width: 1600px) {
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 7%;
 	}
 }
 
-/** Computer: 1024px **/
+/** Computer Desktop: 19" Desktop **/
+@media only screen and (max-width: 1440px) {
+	#name {
+		margin-left: 17%;
+	}
+}
 
+/** Computer: 15" Notebook **/
+@media only screen and (max-width: 1440px) {
+	#name {
+		margin-left: 15%;
+	}
+
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 8%;
+	}
+}
+
+/** Computer: 13" Notebook **/ 
+@media only screen and (max-width: 1280px) {
+	#name {
+		margin-left: 14%;
+	}
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 9%;
+	}
+}
+
+/** Computer: 12" Notebook **/
 @media only screen and (max-width: 1024px) {
-	
 	.wrapper {
 		width:80%;
 	}
@@ -25,20 +50,18 @@
 	}
 
 	#name {
-		margin-left: 30%;
+		margin-left: 15%;
 	}
-
 }
 
-/** Tablet-Portrait: 966px **/
-
+/** Tablet: Google Nexus 7 **/
 @media only screen and (max-width: 966px) {
 	.wrapper {
 		width:85%;
 	}
 }
 
-/** Tablet-Portrait: 800px **/
+/** Tablet: Kindle Fire HD 8.9" Portrait / Kindle Fire Landscape **/
 
 @media only screen and (max-width: 800px) {
 	
@@ -47,7 +70,7 @@
 	}
 
 	#name {
-		margin-left: 25%;
+		margin-left:13%;
 	}
 
 	#social {
@@ -56,55 +79,98 @@
 	}
 }
 
-/** Tablet-Portrait: 603px **/
-
-@media only screen and (max-width: 603px) {
+/** Tablet: iPad 1-3/Mini Portrait **/
+@media only screen and (max-width: 768px) {
 	.col1_left, .col1_mid, .col1_right, .col2_left, .col2_right {
 		float: none;
 		width: 100%;
 		margin: 0 0 20px;
 	}
 
-	#name{
-		margin-left: 18%;
+	figure {
+		margin-left:10%;
+	}
+
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 12%;
 	}
 }
 
-/** Tablet-Portrait: 533px **/
+/** Mobile: Samsung Galaxy S3/4 **/
+@media only screen and (max-width:640px) {
+	.wrapper {
+		width:100%;
+	}
+
+	#icon {
+		display: none;
+	}
+
+	#name {
+		margin-left: 15%;
+		margin-bottom: 0;
+	}
+}
+
+/** Tablet: Google Nexus 7 Portrait **/
+@media only screen and (max-width:603px) {
+	#name {
+		margin-left:15%;
+		margin-bottom: 0;
+	}
+
+	figure {
+		margin-left:6%;
+	}
+
+	#nav nav a {
+		width: 19%;
+	}
+}
+
+/** Tablet: Kindle Fire HD 7" Portrait **/
 
 @media only screen and (max-width: 533px) {
 	.wrapper {
 		width:100%;
 	}
-}
 
-/** Mobile: 480px **/
-
-@media only screen and (max-width: 480px) {
-	
-	img {
-		width:275px;
-		height:200px;
-		margin-left:18%;
-		margin-right:5%;
+	figure {
+		margin-left: 2%;
 	}
 
 	#name {
-		font-size:1.2em;
-		margin-left: 28%;
-		margin-top:1%;
-		margin-bottom:1%;
+		margin-left: 5%;
 	}
 
-	#nav a {
+	#nav nav a {
+		width: 19%;
+		font-size: 16px;
+	}
+}
+
+/** Mobile: LG Optimus S / iPhone 3 & 4 Landscape **/
+
+@media only screen and (max-width: 480px) {
+	
+	figure img{
+		width:350px;
+		height:270px;
+		margin-left:10%;
+	}
+
+	#nav nav a {
 		font-size:0.9em;
+		width: 100%;
+	}
+
+	#name img {
+		width: 290px;
+		height: 100px;
+		margin-left: 10%;
 	}
 
 	p {
-		font-size:0.8em;
-	}
-
-	li {
 		font-size:0.8em;
 	}
 
@@ -112,55 +178,46 @@
 		width:100%;
 		margin:1%;
 	}
+
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 10%;
+	}
 }
 
-/** Mobile: 320px **/
 
+/** Mobile: LG Optimus S / iPhone 3 & 4 Portrait **/
+
+@media only screen and (max-width: 360px) {
+	
+
+	#name img{
+		width: 225px;
+		height: 75px;
+		margin-bottom: 0;
+	}
+
+	#name {
+		margin-left:10%;
+
+	}
+
+	figure img {
+		display: none;
+	}
+
+	iframe {
+		width: 290px;
+		height: 375px;
+	}
+
+	a.lin, a.pin, a.email, a.gplus {
+		margin: 0 0 0 7%;
+	}
+}
+
+/** Mobile **/
 @media only screen and (max-width: 320px) {
-	.wrapper {
-		width:100%;
-	}
-
-	#nav nav a {
-		display: block;
-		width: 100%;
-		font-size: 0.8em;
-		border-right: 0;
-		border: 1px solid #ccc;
-	}
-
-	img {
-		margin:1%;
-	}
-
 	#name {
-		margin-left:18%;
-	}
-}
-
-/** Mobile: 240px **/
-
-@media only screen and (max-width: 240px) {
-	img {
-		width:175px;
-		height:120px;
-		margin:5%;
-	}
-
-	#name {
-		margin-left:18%;
-		font-size:0.8em;
-	}
-
-	p {
-		font-size:0.8em;
-	}
-
-	h4, h5 {
-		font-size:0.8em;
-	}
-
-	li {
-		font-size:0.8em;
+		margin-left:8%;
 	}
 }

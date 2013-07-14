@@ -4,32 +4,62 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<script src="https://raw.github.com/Wilto/iOS-Orientationchange-Fix/master/ios-orientationchange-fix.js"></script>
-	<meta name="keywords" content="natasha selvey, natasha, selvey">
+	<script src="js/ios-orientationchange-fix.js"></script>
+	<meta name="keywords" content="natasha selvey, natasha, selvey, technical writing, writer">
 	<meta name="description" content="Natasha Selvey is experienced in documentation and quality, and currently working towards a career in technical writing and support.">
 	<title>Natasha Selvey - Work</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/device_styles.css">
-	<script src="js/modernizr.custom.min.js"></script>
+	<link rel="shortcut icon" href="icon.png">
 	<!-- [if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<! [endif] -->
+
+	<style type="text/css">
+      * { padding:0; margin:0; }
+      #work { bbackground-image: url(../images/cream_pixels.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("work").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script>
 </head>
 
 <body>
+
 	<!--/////////// Header //////////-->
 	<header>
 
 		<!-- /////// Name Logo ////// -->
 		<div id="name">
 			<div class="wrapper">
-				<h1>Natasha Selvey</h1>
+				<a href="index.html"><img src="name.png" alt="name" width="400" height="100"></a>
 			</div>
 		</div>
 		<!-- /////// End Name Logo ////// -->
+		<!-- /////// End Name Logo ////// -->
+
 	<div id="containerborder" class="clearfix">	
 		<div class="wrapper">
+			
 		<!-- ////// Navigation Bar ///// -->
 		<div id="nav">
 				<nav>
@@ -106,7 +136,7 @@
 	<!--/////////// Footer //////////-->
 	<div id="footer">
 		<footer>
-			&copy; 2013 Natasha Selvey. All Rights Reserved. 
+			&copy; 2013 Natasha Selvey. Branding images by <a href="http://amyzhangdesign.com/">Amy Zhang Design</a>. 
 		</footer>
 	</div>
 	<!--/////////// End Footer //////////-->

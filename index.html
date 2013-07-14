@@ -4,17 +4,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<script src="https://raw.github.com/Wilto/iOS-Orientationchange-Fix/master/ios-orientationchange-fix.js"></script>
-	<meta name="keywords" content="natasha selvey, natasha, selvey">
+	<script src="js/ios-orientationchange-fix.js"></script>
+	<meta name="keywords" content="natasha selvey, natasha, selvey, technical writing, writer">
 	<meta name="description" content="Natasha Selvey is experienced in documentation and quality, and currently working towards a career in technical writing and support.">
 	<title>Natasha Selvey - About</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/device_styles.css">
-	<script src="js/modernizr.custom.min.js"></script>
+	<link rel="shortcut icon" href="icon.png">
 	<!-- [if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<! [endif] -->
+
+	<style type="text/css">
+      * { padding:0; margin:0; }
+      #container { bbackground-image: url(../images/cream_pixels.png); height:100%; width:100%; }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = getViewportHeight();
+
+        if(height > 0)
+          document.getElementById("container").style.height = height + "px";
+      }
+
+      function getViewportHeight() {
+        var h = 0;
+
+        if(self.innerHeight)
+          h = window.innerHeight;
+        else if(document.documentElement && document.documentElement.clientHeight)
+          h = document.documentElement.clientHeight;
+        else if(document.body) 
+          h = document.body.clientHeight;
+
+        return h;
+      }
+    </script> 
 </head>
 
 <body>
@@ -25,7 +51,7 @@
 		<!-- /////// Name Logo ////// -->
 		<div id="name">
 			<div class="wrapper">
-				<h1>Natasha Selvey</h1>
+				<a href="index.html"><img src="name.png" alt="name" width="400" height="100"></a>
 			</div>
 		</div>
 		<!-- /////// End Name Logo ////// -->
@@ -55,9 +81,9 @@
 		<!-- ////// Picture of Me ////// -->
 		<div id="container" class="clearfix">
 			<div class="wrapper">
-				<section class="col2_left">
+				<section id="front_image" class="col2_left">
 					<figure>
-						<img src="IMG_1599.jpg" alt="Picture of Natasha" title="Welcome to my page!" width="485" height="350">
+						<img src="photo.jpg" alt="Picture of Natasha" title="Welcome to my page!" width="485" height="350">
 					</figure>
 				</section>
 		<!-- ////// End Picture of Me ////// -->
@@ -70,13 +96,16 @@
 					I plan to keep you updated on my recent acheivements and work - so follow my blog for updates or contact me for inquiries!
 					</p>
 				</section>
+		<!-- ///////// End About Me Text ////// -->
+
+		<!-- //////// Social Media ///////// -->
 				<div id="social" class="col2_left">
 					<a class="lin" href="http://www.linkedin.com/pub/natasha-selvey/4a/440/103" target="_blank" title="LinkedIn">LinkedIn</a>
 					<a class="pin" href="http://pinterest.com/nyselvey/" target="_blank" title="Pinterest">Pinterest</a>
 					<a class="email" href="http://www.natashaselvey.com/contact" target="_blank" title="Contact">Contact</a>
 					<a class="gplus" href="https://plus.google.com/118386001030420549000" target="_blank" title="Google Plus">RSS</a>
 				</div>
-		<!-- ///////// End About Me Text ////// -->
+		<!-- /////// Social Media //////// -->
 
 	<!--/////////// Ends About Me Section //////////-->
 
@@ -85,7 +114,7 @@
 
 	<!--/////////// Footer //////////-->
 	<footer>
-		&copy; 2013 Natasha Selvey. All Rights Reserved. 
+		&copy; 2013 Natasha Selvey. Branding images by <a href="http://amyzhangdesign.com/">Amy Zhang Design</a>. 
 	</footer>
 	<!--/////////// End Footer //////////-->
 

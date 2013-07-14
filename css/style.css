@@ -1,6 +1,8 @@
 /********** Web Fonts **********/
-@import url(http://fonts.googleapis.com/css?family=Lato:300); 
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@font-face {font-family: Sansumi; src: url('../fonts/Sansumi-Regular.ttf');}
+@font-face {font-family: SansumiDemi; src: url('../fonts/Sansumi-DemiBold.ttf');}
 
 /********** Fixes **********/
 
@@ -32,23 +34,33 @@ img.verif_img {
 
 /********** Global **********/
 
+iframe {
+	display: block;
+	width: 90%;
+	height: 890px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-left:4%;
+}
 
 h4 {
-	color:#20A4AB;
+	color: #b77c7c;
 	margin-bottom: 5px;
-	font-family: 'Lato', sans-serif;
+	font-family: SansumiDemi;
 	font-weight: bolder;
 }
 
 h5 {
 	margin-bottom: 5px;
 	margin-top: 5px;
-	font-family: Arial;
+	font-family: Sansumi;
 	font-weight: bold;
+	color:rgb(221, 185, 171);
 }
 
 p {
 	font-size: 14px;
+	font-family: SansumiDemi;
 	line-height: 1em;
 }
 
@@ -95,13 +107,16 @@ a:link, a:visited {
 	text-decoration:none;
 }
 
+footer a:link, a:visited {
+	color:rgb(221, 185, 171);
+}
+
 .shadow {
 	box-shadow: 0 1px 5px #333;
 }
 
 .wrapper {
 	width: 65%;
-	min-height: 100%;
 	margin: 0 auto;
 }
 
@@ -128,7 +143,7 @@ a:link, a:visited {
 		text-indent: 100%;
 		overflow: hidden;
 		white-space: nowrap;
-		margin: 0 0 0 8%;
+		margin: 0 0 0 6%;
 	}
 
 	a.lin {
@@ -167,15 +182,17 @@ section {
 	margin-bottom: 10px;
 }
 
+#front_image {
+	margin: 0;
+	padding: 0;
+}
+
 /********** Name **********/
 
-#name {
-	font-family: 'Dancing Script', cursive;
-	font-size:28px;
-	color:#20A4AB;
-	margin-left: 23%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+#name img {
+	margin-left: 6%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	background-color: white;
 }
 
@@ -183,7 +200,7 @@ section {
 
 #nav a {
 	color:black;
-	font-family: 'Lato', sans-serif;
+	font-family: Sansumi;
 	text-align:center;
 	font-size:18px;
 	font-weight:normal;
@@ -199,7 +216,7 @@ section {
 }
 
 #nav a:hover {
-	color:#20A4AB;
+	color:rgb(221, 185, 171);
 }
 
 /********** Positioning Classes **********/
@@ -245,8 +262,8 @@ section {
 /********** Footer **********/
 
 footer {
-	font-size: 12px;
-	font-family: Arial;
+	font-size: 10px;
+	font-family: Sansumi;
 	text-align: center;
 	clear:both;
 	background-image: url(../images/cream_pixels.png);
